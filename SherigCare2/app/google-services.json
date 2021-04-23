@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "277331127834",
+    "project_id": "sherigcare-cac8e",
+    "storage_bucket": "sherigcare-cac8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277331127834:android:99c4beaf3b891274162ba3",
+        "android_client_info": {
+          "package_name": "com.app.infideap.readcontact.controller.access.ui.activity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277331127834-kadsuh3p77h5gl1iu3cghubqg8ecvp93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwSV0J9iVrFvdWdrjjCe_J2v8LuumXWrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277331127834-kadsuh3p77h5gl1iu3cghubqg8ecvp93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277331127834:android:0604b79762b83615162ba3",
+        "android_client_info": {
+          "package_name": "com.gcit.sherigcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277331127834-kadsuh3p77h5gl1iu3cghubqg8ecvp93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwSV0J9iVrFvdWdrjjCe_J2v8LuumXWrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277331127834-kadsuh3p77h5gl1iu3cghubqg8ecvp93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
