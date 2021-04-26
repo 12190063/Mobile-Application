@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TODO_8</string>
+    <string name="edittext_uri">http://developer.android.com</string>
+
+    <!-- Button label for Open Website [CHAR LIMIT=20]-->
+<string name="button_uri">Open Website</string>
+
+    <!-- Default text for Open Location [CHAR LIMIT=30]-->
+<string name="edittext_loc">Paro Taktsang</string>
+
+    <!-- Button label for Open Location [CHAR LIMIT=20]-->
+<string name="button_loc">Open Location</string>
+
+    <!-- Default text for Share This Text [CHAR LIMIT=NONE]-->
+<string name="edittext_share">\'Twas brillig and the slithy toves</string>
+
+    <!-- Button label for Share This Text [CHAR LIMIT=20]-->
+<string name="button_share">Share This Text</string>
+    <string name="text1">text</string>
+    <string name="text2">text</string>
+    <string name="text3">text</string>
+</resources>
