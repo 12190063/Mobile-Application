@@ -99,5 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 .setChooserTitle("Share this text with: ")
                 .setText(txt)
                 .startChooser();
+
+
     }
 }

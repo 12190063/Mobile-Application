@@ -14,8 +14,7 @@
         android:autofillHints=""
         android:hint="@string/text1"
         android:inputType="date|textUri|textShortMessage|textLongMessage|textAutoCorrect|numberSigned|textVisiblePassword|textWebEditText|textMultiLine|textNoSuggestions|textFilter|number|datetime|textWebEmailAddress|textPersonName|text|textPhonetic|textCapSentences|textPassword|textAutoComplete|textImeMultiLine|textPostalAddress|numberDecimal|textEmailAddress|numberPassword|textCapWords|phone|textEmailSubject|textCapCharacters|time|textWebPassword"
-        android:text="@string/edittext_uri"
-        tools:ignore="MissingConstraints" />
+        android:text="@string/edittext_uri"/>
 
     <Button
         android:id="@+id/open_website_button"
