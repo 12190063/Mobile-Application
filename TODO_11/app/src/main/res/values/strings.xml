@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TODO_11</string>
+    <string name="button_label">Change Color</string>
+
+    <!-- String in the hello world textview -->
+    <string name="hello_text_string">Hello World!</string>
+</resources>
