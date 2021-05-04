@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="order_textview" type="id" />
+    <item name="label_spinner" type="id" />
+    <item name="sameday" type="id" />
+    <item name="nextday" type="id" />
+    <item name="pickup" type="id" />
+    <item name="name_label" type="id" />
+    <item name="name_text" type="id" />
+    <item name="address_label" type="id" />
+    <item name="address_text" type="id" />
+    <item name="phone_label" type="id" />
+    <item name="phone_text" type="id" />
+    <item name="note_label" type="id" />
+    <item name="note_text" type="id" />
+    <item name="delivery_label" type="id" />
+</resources>
