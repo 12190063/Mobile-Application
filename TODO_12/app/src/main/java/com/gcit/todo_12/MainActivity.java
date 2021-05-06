@@ -71,18 +71,30 @@ public class MainActivity extends AppCompatActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
+        // Handle app bar item clicks here. The app bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.order:
+                displayToast(getString(R.string.action_order_message));
+                Intent intent = new Intent(MainActivity.this,
+                        order.class);
+                intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
+                startActivity(intent);
 
-        // This comment suppresses the Android Studio warning about simplifying
-        // the return statements.
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+                return true;
+            case R.id.status:
+                displayToast(getString(R.string.action_status_message));
+                return true;
+            case R.id.favourites:
+                displayToast(getString(R.string.action_favorites_message));
+                return true;
+            case R.id.contact:
+                displayToast(getString(R.string.action_contact_message));
+                return true;
+            default:
+                // Do nothing
         }
-
         return super.onOptionsItemSelected(item);
     }
 
