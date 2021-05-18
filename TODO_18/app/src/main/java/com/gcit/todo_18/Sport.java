@@ -8,7 +8,7 @@ class Sport {
     // Member variables representing the title and information about the sport.
     private String title;
     private String info;
-    public final int imageResource;
+    private final int imageResource;
 
     /**
      * Constructor for the Sport data model.
