@@ -2,21 +2,23 @@ package com.gcit.sherigcaref1;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -57,7 +59,7 @@ public class MainActivity extends AppCompatActivity
 
         mToolbar = (Toolbar) findViewById(R.id.main_page_toolbar);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("WhatsApp");
+        getSupportActionBar().setTitle(R.string.app_name);
 
 
         myViewPager = (ViewPager) findViewById(R.id.main_tabs_pager);
@@ -124,7 +126,7 @@ public class MainActivity extends AppCompatActivity
             {
                 if ((dataSnapshot.child("name").exists()))
                 {
-                    Toast.makeText(MainActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(MainActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
@@ -146,7 +148,7 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreateOptionsMenu(menu);
 
-        getMenuInflater().inflate(R.menu.options_menu, menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
 
         return true;
     }
@@ -176,7 +178,18 @@ public class MainActivity extends AppCompatActivity
             SendUserToFindFriendsActivity();
         }
 
+        if (item.getItemId()== R.id.Results)
+        {
+            GotoResult();
+        }
+
         return true;
+    }
+
+    private void GotoResult() {
+        Intent ResultIntent = new Intent(MainActivity.this, Result.class);
+        startActivity(ResultIntent);
+
     }
 
 
@@ -187,6 +200,7 @@ public class MainActivity extends AppCompatActivity
 
         final EditText groupNameField = new EditText(MainActivity.this);
         groupNameField.setHint("e.g Coding Cafe");
+        groupNameField.setTextColor(Color.parseColor("#000000"));
         builder.setView(groupNameField);
 
         builder.setPositiveButton("Create", new DialogInterface.OnClickListener() {

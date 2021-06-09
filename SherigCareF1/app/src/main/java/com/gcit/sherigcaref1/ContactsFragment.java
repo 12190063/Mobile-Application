@@ -2,15 +2,16 @@ package com.gcit.sherigcaref1;
 
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -119,7 +120,7 @@ public class ContactsFragment extends Fragment
 
                                 holder.userName.setText(profileName);
                                 holder.userStatus.setText(profileStatus);
-                                Picasso.get().load(userImage).placeholder(R.drawable.profile_image).into(holder.profileImage);
+                                Picasso.get().load(userImage).placeholder(R.drawable.profile_image_foreground).into(holder.profileImage);
                             }
                             else
                             {
@@ -166,7 +167,6 @@ public class ContactsFragment extends Fragment
         public ContactsViewHolder(@NonNull View itemView)
         {
             super(itemView);
-
             userName = itemView.findViewById(R.id.user_profile_name);
             userStatus = itemView.findViewById(R.id.user_status);
             profileImage = itemView.findViewById(R.id.users_profile_image);

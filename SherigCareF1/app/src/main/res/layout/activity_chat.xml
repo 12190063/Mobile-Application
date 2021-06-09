@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:outlineSpotShadowColor="@color/black"
+    android:background="@drawable/background_right"
     tools:context=".ChatActivity">
 
     <include
@@ -13,17 +14,15 @@
         layout="@layout/app_bar_layout">
     </include>
 
-
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/private_messages_list_of_users"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/chat_toolbar"
         android:layout_above="@+id/chat_linear_layout"
-        android:layout_marginBottom="6dp"
-        >
-    </android.support.v7.widget.RecyclerView>
-
+        android:layout_below="@+id/chat_toolbar"
+        android:layout_marginTop="-6dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/background_right" />
 
     <RelativeLayout
         android:id="@+id/chat_linear_layout"
@@ -31,41 +30,36 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/background_light"
+        android:background="@color/white"
         android:orientation="horizontal"
-        >
-
-
-        <ImageButton
-            android:id="@+id/send_files_btn"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:src="@drawable/send_files"
-            android:layout_alignParentStart="true"
-            android:backgroundTint="@android:color/white"
-            />
-
+        android:layout_alignParentLeft="true">
 
         <EditText
             android:id="@+id/input_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="type message here..."
-            android:padding="15dp"
-            android:maxLines="5"
-            android:layout_toEndOf="@+id/send_files_btn"
+            android:layout_width="296dp"
+            android:layout_height="85dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
             android:layout_toStartOf="@+id/send_message_btn"
-            />
+            android:layout_toLeftOf="@+id/send_message_btn"
+            android:hint="@string/type_message_here"
+            android:maxLines="5"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
 
 
         <ImageButton
             android:id="@+id/send_message_btn"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/send_message"
+            android:layout_width="49dp"
+            android:layout_height="44dp"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
             android:backgroundTint="@android:color/white"
-            />
+            android:src="@drawable/send_files_foreground" />
 
     </RelativeLayout>
 
